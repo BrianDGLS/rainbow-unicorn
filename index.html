@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rainbow Unicorn</title>
+    <style>
+        body {
+            background: linear-gradient(180deg, #FF7F0022, white, #9400D322);
+            box-sizing: border-box;
+            margin: 0;
+            overflow: hidden;
+            text-align: center;
+        }
+
+        .made-by {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            padding: 8px 16px;
+            background: white;
+            color: hotpink;
+            font-family: monospace;
+            font-size: 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="./unicorn.png" alt="unicorn" id="unicorn" hidden>
+    <span class="made-by">Made by <a href="https://github.com/BrianDGLS">BrianDGLS</a></span>
+    <script src="./src/unicorn.js"></script>
+</body>
+
+</html>

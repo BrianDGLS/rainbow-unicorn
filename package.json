@@ -1,0 +1,8 @@
+{
+  "name": "unicorn",
+  "version": "1.0.0",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^3.1.1"
+  }
+}

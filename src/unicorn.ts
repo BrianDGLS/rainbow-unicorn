@@ -157,7 +157,7 @@ const COLORS = [
 const RENDERER = new Renderer(CTX)
 const TILES: Tile[] = []
 const PARTICLES: Particle[] = []
-const PARTICLE_COUNT = 30
+const PARTICLE_COUNT = 40
 const UNICORN_IMAGE = document.getElementById('unicorn') as HTMLImageElement
 const UNICORN = new Unicorn(UNICORN_IMAGE)
 
@@ -209,8 +209,8 @@ function updateParticle(p: Particle): void {
 
 function updateUnicorn(unicorn: Unicorn): void {
     const { image } = unicorn
-    const centerX = WIDTH / 2 - image.width / 2 + 20
-    const centerY = HEIGHT / 2 - image.height / 2 - 5
+    const centerX = WIDTH / 2 - image.width / 2
+    const centerY = HEIGHT / 2 - image.height / 2 - 50
     const radiusX = 20
     const radiusY = 8
     unicorn.x = centerX + Math.cos(unicorn.angle) * radiusX
@@ -240,8 +240,8 @@ function createParticles(): void {
         const p = ParticleFactory.create({
             x: WIDTH / 2,
             y: HEIGHT / 2,
-            vx: randomNumber(-12, -3),
-            vy: randomNumber(-3, 1)
+            vx: randomNumber(-14, -3),
+            vy: randomNumber(-8, 2)
         })
 
         let i = Math.floor(randomNumber(0, 60)) + 1
